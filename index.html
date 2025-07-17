@@ -1,70 +1,88 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <title>Eventi - Circolo Arci Tunnel</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Circolo Arci Tunnel</title>
   <style>
-    body {
-      background: #000;
-      color: #ff6600;
-      font-family: Arial, sans-serif;
-      padding: 2em;
+    @font-face {
+      font-family: 'TunnelFont';
+      src: url('TunnelFont.woff2') format('woff2');
     }
-    h1 {
+    body {
+      font-family: 'TunnelFont', Arial, sans-serif;
+      background-color: #000;
+      color: #ff6600;
+      margin: 0; padding: 0;
+    }
+    header {
+      background: #000;
+      padding: 2em 1em 1em 1em;
       text-align: center;
     }
-    .grid {
+    header img {
+      height: 120px;
+    }
+    nav {
+      background: #000;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       gap: 2em;
-      margin-top: 2em;
+      padding: 1em;
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
     }
-    .event {
-      width: 200px;
-      text-align: center;
-    }
-    .event img {
-      width: 100%;
-      border: 2px solid #ff6600;
-    }
-    .event-title {
-      margin-top: 0.5em;
+    nav a {
+      color: #ff6600;
+      text-decoration: none;
       font-weight: bold;
     }
-    .event-date {
+    section {
+      display: block;
+      padding: 2em;
+    }
+    footer {
+      text-align: center;
+      background: #000;
+      color: #ff6600;
+      padding: 2em 1em 1em 1em;
       font-size: 0.9em;
+      position: relative;
+      bottom: 0;
+      width: 100%;
     }
   </style>
 </head>
 <body>
-  <h1>Eventi</h1>
-  <div class="grid">
-
-    <div class="event">
-      <a href="eventi/mamma-ho-perso-lorario.html">
-        <img src="img/mamma-ho-perso-lorario.jpg" alt="Mamma, ho perso l’orario">
-        <div class="event-title">Mamma, ho perso l’orario</div>
-        <div class="event-date">20–21 Giugno</div>
-      </a>
-    </div>
-    
-    <div class="event">
-      <a href="eventi/gin-party-per-fabio.html">
-        <img src="img/gin-party-per-fabio.jpg" alt="Gin Party per Fabio">
-        <div class="event-title">Gin Party per Fabio</div>
-        <div class="event-date">28 Giugno</div>
-      </a>
-    </div>
-    
-    <div class="event">
-      <a href="eventi/devil-in-the-eyes.html">
-        <img src="img/devil-in-the-eyes.jpg" alt="Devil in the Eyes">
-        <div class="event-title">Devil in the Eyes</div>
-        <div class="event-date">24 Maggio</div>
-      </a>
-    </div>
-    
-  </div>
+  <header>
+    <img src="images.png" alt="Logo Tunnel"/>
+    <h1>Circolo Arci Tunnel</h1>
+    <p>Reggio Emilia – Musica, Cultura, Comunità</p>
+  </header>
+  <nav>
+    <a href="#eventi">Eventi</a>
+    <a href="#arci">ARCI</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+  <section id="eventi">
+    <h2>Eventi</h2>
+    <p>Presto troverai qui il nostro calendario aggiornato di concerti, serate ed eventi speciali.</p>
+  </section>
+  <section id="arci">
+    <h2>ARCI – Diventa Socio</h2>
+    <p>Con la tessera ARCI accedi a tutti i circoli affiliati in Italia. È valida dal 1 ottobre al 30 settembre e permette la partecipazione ad attività culturali, sociali e ricreative promosse da migliaia di associazioni.</p>
+    <p>Scopri tutti i vantaggi e come associarti su <a href="https://www.arci.it/diventa-socio/" target="_blank" style="color:#ff6600;">www.arci.it/diventa-socio</a>.</p>
+  </section>
+  <section id="contatti">
+    <h2>Contatti</h2>
+    <p>Circolo Arci Tunnel</p>
+    <p>Via del Chionso 20/G, 42124 Reggio Emilia (RE)</p>
+    <p>Email: info@arcitunnel.it</p>
+    <p>Instagram: <a href="https://www.instagram.com/arcitunnel/" style="color:#ff6600;">@arcitunnel</a></p>
+    <p>Facebook: <a href="https://www.facebook.com/arcitunnel" style="color:#ff6600;">facebook.com/arcitunnel</a></p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Circolo Arci Tunnel – Via del Chionso 20/G, Reggio Emilia</p>
+  </footer>
 </body>
 </html>
